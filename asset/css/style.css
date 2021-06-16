@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+:root {
+  --color-primary: #ffeeff;
+  --color1: #7f00ff;
+  --color2: #e100ff;
+  --black1: #34373f;
+  --grey: #6c757d;
+  --hero-bg: url(./../img/hero-bg.svg);
+  --hero-bg2: url(./../img/hero-bg-img3.png);
+
+  --font1: "Red Hat Display", sans-serif;
+
+  --banner-font: "PT Serif", serif;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #fff;
+  font-family: var(--font1);
+  color: var(black1);
+}
+.bg-lb-primary {
+  background-color: var(--color-primary);
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-900 {
+  font-weight: 900;
+}
+.black1 {
+  color: var(--black1);
+}
+.text-color2 {
+  color: var(--grey);
+}
+
+/*=============== Background of Navbar ===========*/
+
+.main-navigation {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.course-site-btn {
+  color: var(--color1);
+  transition-duration: 0.2s;
+  background: linear-gradient(
+    to right,
+    var(--color1) 0%,
+    var(--color2) 100.09%
+  );
+  color: white;
+  font-size: 0.9rem;
+}
+
+.course-site-btn:hover {
+  background: linear-gradient(
+    108.58deg,
+    rgb(149, 64, 247) 0%,
+    rgb(251, 113, 253) 120.09%
+  );
+  color: white;
+}
+.analytics-site-btn {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 0.9rem;
+  border: 1px solid rgb(170, 170, 170);
+}
+
+.analytics-site-btn:hover {
+  border: 1px solid rgb(71, 71, 71);
+}
+
+/*========== Hero Section =========*/
+
+.hero-bg {
+  background-image: var(--hero-bg2);
+
+  /* max-height: calc(100vh - 116px); */
+  min-height: 600px;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media (max-width: 992px) {
+  .hero-bg {
+    background-image: url(./../img/mobile-herobg-2.png);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+}
+@media (max-width: 550px) {
+  .hero-bg {
+    min-height: 500px;
+    background-size: 85%;
+  }
+}
+
+/*======= All Section Title ======*/
+.sec-top {
+  min-height: 10vh;
+}
+@media (max-width: 992px) {
+  .sec-top {
+    min-height: 8vh;
+  }
+}
+.sec-header {
+  content: "";
+  display: inline-block;
+  text-align: center;
+  margin: 0 12px 12px 12px;
+  width: 6rem;
+  height: 0.5rem;
+  background: var(--color2);
+  border-radius: 20px;
+}
+/*====== social media icons ====*/
+.fa-instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-twitter:hover {
+  background-color: #1da1f2;
+  -webkit-background-clip: text;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-facebook-f:hover {
+  background-color: #4267b2;
+  -webkit-background-clip: text;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-linkedin-in:hover {
+  background-color: #2867b2;
+  -webkit-background-clip: text;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*===== What we offer and aboutus section =====*/
+.offer-img-block {
+  height: 255px;
+  width: 300px;
+}
+.offer-card {
+  max-width: 390px;
+  padding: 20px;
+}
+
+.about-us-bg {
+  background: url("./../img/about-us-bg.svg") no-repeat;
+  background-position: left;
+  background-size: auto;
+}
+@media (max-width: 550px) {
+  .about-us-bg {
+    background-size: 60%;
+  }
+}
+
+/*====== parallax banner =======*/
+.parallax {
+  background-image: url("../img/parlex1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.banner-sec {
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  font-family: var(--banner-font);
+}
+.banner {
+  min-height: 40vh;
+}
+
+/*======== services section =======*/
+
+.nav-pills .active {
+  color: #ffffff !important;
+  background: var(--color1); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--color1),
+    var(--color2)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    120deg,
+    var(--color1),
+    var(--color2)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav-pills div {
+  cursor: pointer;
+}
+.nav-pills .shadow-sm:hover {
+  box-shadow: 0 0.175rem 0.5rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/*======== Team Slider =========*/
+.slider-width {
+  width: calc(100vh-50px) !important;
+}
+.team-img-block {
+  height: 100px;
+  width: 100px;
+}
+.team-img-card {
+  border-radius: 40px;
+  min-height: 38vh;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+}
+.sec-height {
+  max-height: calc(100vh);
+  min-height: 600px;
+}
+
+/*======== Login Page =========*/
+.login-card {
+  border-radius: 20px;
+  background: #ffffff;
+  
+}
+.login-bg {
+  background-color: #f876de;
+  background-image: linear-gradient(315deg, #f876de 0%, #b978fa 74%);
+}
+
+/*======== Terms and privacy Page =========*/
+
+.brand-text {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 120%;
+  color: var(--black1);
+}
+.page-content h1:first-of-type {
+  font-weight: 900;
+  font-size: 56px;
+}
+.page-content h1 {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+}
+.page-content p,
+ul {
+  margin-top: 24px;
+  display: block;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 28px;
+  color: #716767;
+}
+.page-content p b {
+  color: var(--black1);
+  font-weight: 600;
+}
+.page-content p:first-of-type {
+  font-weight: 650;
+  color: var(--black1);
+}
+
+@media (max-width: 992px) {
+  .page-content h1:first-of-type {
+    font-size: 32px;
+  }
+}
