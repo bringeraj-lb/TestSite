@@ -15,11 +15,11 @@
       crossorigin="anonymous"
     />
 
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
 
     <link href="./asset/css/style.css" rel="stylesheet" />
   </head>
@@ -70,22 +70,24 @@
             <h2 class="fw-bold">Welcome to Analytics</h2>
           </div>
           <div>
-            <form action="">
+            <form name="loginform" onsubmit="validateform()">
               <div class="mb-3 mt-2">
                 <label for="exampleInputEmail1" class="form-label"
                   >Login Id</label
                 >
-                <input
-                  type="email"
-                  class="form-control"
-                  aria-describedby="emailHelp"
-                />
+                <input name="id" id="id" class="form-control" required />
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label"
                   >Password</label
                 >
-                <input type="password" class="form-control" />
+                <input
+                  name="password"
+                  id="pw"
+                  type="password"
+                  class="form-control"
+                  required
+                />
               </div>
               <button type="submit" class="btn btn-primary w-100 mt-3">
                 Login
@@ -104,4 +106,5 @@
       </div>
     </section>
   </body>
+  <script src="./asset/js/login.js"></script>
 </html>
