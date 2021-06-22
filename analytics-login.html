@@ -70,27 +70,29 @@
             <h2 class="fw-bold">Welcome to Analytics</h2>
           </div>
           <div>
-            <form action="">
+            
               <div class="mb-3 mt-2">
                 <label for="exampleInputEmail1" class="form-label"
                   >Login Id</label
                 >
-                <input
-                  type="email"
-                  class="form-control"
-                  aria-describedby="emailHelp"
-                />
+                <input name="id" id="id" class="form-control" required />
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label"
                   >Password</label
                 >
-                <input type="password" class="form-control" />
+                <input
+                  name="password"
+                  id="pw"
+                  type="password"
+                  class="form-control"
+                  required
+                />
               </div>
-              <button type="submit" class="btn btn-primary w-100 mt-3">
+              <button type="button" class="btn btn-primary w-100 mt-3" onclick="validateform()">
                 Login
               </button>
-            </form>
+            
           </div>
           <div>
             <a href="#" class="text-decoration-none"
@@ -104,4 +106,5 @@
       </div>
     </section>
   </body>
+  <script src="./asset/js/login.js"></script>
 </html>
