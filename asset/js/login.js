@@ -16,18 +16,18 @@
          {
              case "royal250": if(password=="Lb14Xyd!"){
                  
-                window.location.replace("./Demopages/student.html");
+                window.location.replace("./student.html");
              }
              
              case "t-royal30": if(password=="Lbvse@15"){
                   
-                 window.location.replace("./Demopages/teacher.html");
+                 window.location.replace("./teacher.html");
              }
              return;
              case "t-royal1": if(password=="Lbafs32!"){
                   
                 
-                window.location.replace("./Demopages/school.html");
+                window.location.replace("./school.html");
              }
              return;
              default : alert("Invalid credentials");
