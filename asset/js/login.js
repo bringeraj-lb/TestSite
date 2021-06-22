@@ -16,18 +16,18 @@
          {
              case "royal250": if(password=="Lb14Xyd!"){
                  
-                window.location = "./student.html";
+                window.location = "https://student.learnbasics.fun/";
              }
              
              case "t-royal30": if(password=="Lbvse@15"){
                   
-                 window.location = "./teacher.html";
+                 window.location = "https://staff.learnbasics.fun/";
              }
              return;
              case "t-royal1": if(password=="Lbafs32!"){
                   
                 
-                window.location = "./school.html";
+                window.location = "https://school.learnbasics.fun/";
              }
              return;
              default : alert("Invalid credentials");
