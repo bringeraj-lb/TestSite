@@ -23,15 +23,31 @@
 
     <link href="./asset/css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <section
+  <body class="login-bg">
+    <div
+      id="invalid"
       class="
-        container-fluid
-        d-flex
-        justify-content-center
-        align-items-center
-        login-bg
+        alert alert-warning alert-dismissible
+        fade
+        show
+        position-absolute
+        w-100
+        text-center
+        d-none
       "
+      role="alert"
+    >
+      <strong>Invalid credentials</strong>- Please provide valid LoginID and
+      password.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <section
+      class="container-fluid d-flex justify-content-center align-items-center"
       style="min-height: 100vh"
     >
       <div
@@ -70,29 +86,31 @@
             <h2 class="fw-bold">Welcome to Analytics</h2>
           </div>
           <div>
-            
-              <div class="mb-3 mt-2">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Login Id</label
-                >
-                <input name="id" id="id" class="form-control" required />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
-                >
-                <input
-                  name="password"
-                  id="pw"
-                  type="password"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <button type="button" class="btn btn-primary w-100 mt-3" onclick="validateform()">
-                Login
-              </button>
-            
+            <div class="mb-3 mt-2">
+              <label for="exampleInputEmail1" class="form-label"
+                >Login Id</label
+              >
+              <input name="id" id="id" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                name="password"
+                id="pw"
+                type="password"
+                class="form-control"
+                required
+              />
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary w-100 mt-3"
+              onclick="validateform()"
+            >
+              Login
+            </button>
           </div>
           <div>
             <a href="#" class="text-decoration-none"

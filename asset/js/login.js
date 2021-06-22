@@ -5,12 +5,7 @@
      let password=document.getElementById("pw").value;
      console.log(id,password);
 
-     if(id==" " || password==" ")
-     {
-         alert("Input field cannot be empty");  
-     }
-     else
-     {
+     
         
          switch(id)
          {
@@ -30,8 +25,10 @@
                 window.location = "https://school.learnbasics.fun/";
              }
              return;
-             default : alert("Invalid credentials");
+             default : var element = document.getElementById("invalid");
+                         element.classList.remove("d-none");
+                        
              
-         }
+         
      }
 }
