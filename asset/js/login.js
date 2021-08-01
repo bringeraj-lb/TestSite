@@ -14,19 +14,19 @@
         
          switch(id)
          {
-             case "parent@royal": if(password=="alfa"){
+             case "parent@lotus": if(password=="alfa"){
                 window.location = "https://student.learnbasics.fun/";
              } else {
                 alert("Invalid credentials");
              }
              return;
-             case "teacher@royal": if(password=="alfa"){
+             case "teacher@lotus": if(password=="alfa"){
                  window.location = "https://staff.learnbasics.fun/";
              } else {
                 alert("Invalid credentials");
              }
              return;
-             case "school@royal": if(password=="alfa"){
+             case "school@lotus": if(password=="alfa"){
                 window.location = "https://school.learnbasics.fun/";
              } else {
                 alert("Invalid credentials");
