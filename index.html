@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Basics</title>
+    <link rel="icon" type="image.png" href="./asset/img/logo.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learn Basics</title>
-  <link rel="icon" type="image.png" href="./asset/img/logo.png" />
+    <!--======== Bootstrap 5  =========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-  <!--======== Bootstrap 5  =========-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+    <!--========= Fontawesome ===========-->
+    <script
+      src="https://kit.fontawesome.com/154fa5a621.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!--========= Fontawesome ===========-->
-  <script src="https://kit.fontawesome.com/154fa5a621.js" crossorigin="anonymous"></script>
+    <!--=========Tiny-slider.css===========-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
+    />
+    <!--=========jquery===========-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-  <!--=========Tiny-slider.css===========-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" />
-  <!--=========jquery===========-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="./asset/css/style.css" rel="stylesheet" />
 
-  <link href="./asset/css/style.css" rel="stylesheet" />
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9C403F76T9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body data-spy="scroll" data-target=".navbar" data-offset="70">
-  <!--========= Headder Section ======== -->
-  <header class="text-secondary bg-light">
-    <div class="container d-flex flex-row justify-content-between py-3">
-      <div class="
+      gtag("config", "G-9C403F76T9");
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!--========= Headder Section ======== -->
+    <header class="text-secondary bg-light">
+      <div class="container d-flex flex-row justify-content-between py-3">
+        <div
+          class="
             list-inline
             d-flex
             w-auto
             justify-content-end justify-content-md-start
-          ">
-        <li class="list-inline-item mx-1 mx-lg-3 align-items-center">
-          <div class="d-flex align-items-center">
-            <i class="fas fa-envelope me-2"></i>
-            <a class="text-decoration-none text-secondary" href="mailto:hi@learnbasics.fun">hi@learnbasics.fun
-            </a>
-          </div>
-        </li>
-        <li class="list-inline-item mx-1 mx-lg-3 ms-lg-4">
-          <div class="d-flex align-items-center">
-            <i class="fas fa-headset me-2"></i>
-            <a class="text-decoration-none text-secondary d-none d-md-block"
-              href="tel:+91-9488090404">+91-9488090404</a>
-            <a class="text-decoration-none text-secondary d-block d-md-none" href="tel:+91-9488090404">+919488090404</a>
-          </div>
-        </li>
-      </div>
+          "
+        >
+          <li class="list-inline-item mx-1 mx-lg-3 align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope me-2"></i>
+              <a
+                class="text-decoration-none text-secondary"
+                href="mailto:hi@learnbasics.fun"
+                >hi@learnbasics.fun
+              </a>
+            </div>
+          </li>
+          <li class="list-inline-item mx-1 mx-lg-3 ms-lg-4">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-headset me-2"></i>
+              <a
+                class="text-decoration-none text-secondary d-none d-md-block"
+                href="tel:+91-9488090404"
+                >+91-9488090404</a
+              >
+              <a
+                class="text-decoration-none text-secondary d-block d-md-none"
+                href="tel:+91-9488090404"
+                >+919488090404</a
+              >
+            </div>
+          </li>
+        </div>
 
-      <div class="list-inline d-none d-md-block">
-        <!--====== social media icons  ========-->
+        <div class="list-inline d-none d-md-block">
+          <!--====== social media icons  ========-->
 
-        <!-- <li class="list-inline-item mx-2">
+          <!-- <li class="list-inline-item mx-2">
             <a href="#" class="text-decoration-none text-secondary"
               ><i class="fab fa-instagram"></i
             ></a>
@@ -78,210 +119,272 @@
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </li> -->
+        </div>
       </div>
+    </header>
+
+    <!--========== Navbar ===========-->
+    <div class="container-fluid sticky-top bg-white" id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <div class="d-flex">
+            <span class="w-100 d-lg-none d-block"></span>
+            <a class="navbar-brand d-none d-lg-inline-block py-0" href="#">
+              <img
+                src="asset/img/LB-logo.svg"
+                alt="Learnbasics logo"
+                class="img-responsive align-self-lg-center"
+                width="60"
+                height="60"
+              />
+            </a>
+            <a
+              class="navbar-brand-two mx-auto d-lg-none d-inline-block py-0"
+              href="#"
+            >
+              <img
+                src="asset/img/LB-logo.svg"
+                alt="Learnbasics logo"
+                class="img-responsive align-self-lg-center"
+                width="50"
+                height="50"
+              />
+            </a>
+          </div>
+          <div class="text-end">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse col-lg-7"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mt-0 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link m-2 fw-700" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2 fw-700" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2 fw-700" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2 fw-700" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="collapse navbar-collapse col-lg-3 justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mt-0 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./analytics-login.html"
+                  ><button
+                    class="btn rounded-pill analytics-site-btn fw-700"
+                    type="button"
+                  >
+                    Analytics
+                  </button></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://my.learnbasics.fun/learn/account/signin"
+                  target="_blank"
+                  ><button
+                    class="btn rounded-pill course-site-btn fw-700"
+                    type="button"
+                  >
+                    Log In
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </header>
 
-  <!--========== Navbar ===========-->
-  <div class="container-fluid sticky-top bg-white" id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <div class="d-flex">
-          <span class="w-100 d-lg-none d-block"></span>
-          <a class="navbar-brand d-none d-lg-inline-block py-0" href="#">
-            <img src="asset/img/LB-logo.svg" alt="Learnbasics logo" class="img-responsive align-self-lg-center"
-              width="60" height="60" />
-          </a>
-          <a class="navbar-brand-two mx-auto d-lg-none d-inline-block py-0" href="#">
-            <img src="asset/img/LB-logo.svg" alt="Learnbasics logo" class="img-responsive align-self-lg-center"
-              width="50" height="50" />
-          </a>
-        </div>
-        <div class="text-end">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse col-lg-7" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mt-0 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link m-2 fw-700" href="#about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-2 fw-700" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-2 fw-700" href="#team">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-2 fw-700" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="collapse navbar-collapse col-lg-3 justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mt-0 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="./analytics-login.html"><button
-                  class="btn rounded-pill analytics-site-btn fw-700" type="button">
-                  Analytics
-                </button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://my.learnbasics.fun/learn/account/signin" target="_blank"><button
-                  class="btn rounded-pill course-site-btn fw-700" type="button">
-                  Log In
-                </button></a>
-            </li>
-          </ul>
+    <!--========== Hero Section ==========-->
+
+    <section
+      class="container-fluid hero-bg d-flex align-items-lg-center"
+      id="hero"
+    >
+      <div class="container h-100 mt-5 mt-lg-0">
+        <div class="col-md-8 col-lg-5 pt-4 pt-lg-0 ms-lg-2 d-flex flex-column">
+          <div>
+            <h2 class="display-4 fw-900 black1">
+              Welcome to<br />
+              Learn Basics
+            </h2>
+          </div>
+          <div>
+            <h5 class="fw-400 black1" style="line-height: 27px">
+              A NIT, IIT, IISc Alumini Venture.
+            </h5>
+          </div>
         </div>
       </div>
-    </nav>
-  </div>
+    </section>
 
-  <!--========== Hero Section ==========-->
+    <!--========== Who we are? - Section 2 ==========-->
 
-  <section class="container-fluid hero-bg d-flex align-items-lg-center" id="hero">
-    <div class="container h-100 mt-5 mt-lg-0">
-      <div class="col-md-8 col-lg-5 pt-4 pt-lg-0 ms-lg-2 d-flex flex-column">
-        <div>
-          <h2 class="display-4 fw-900 black1">
-            Welcome to<br />
-            Learn Basics
-          </h2>
-        </div>
-        <div>
-          <h5 class="fw-400 black1" style="line-height: 27px">
-            A NIT, IIT, IISc Alumini Venture.
-          </h5>
+    <section id="about-us">
+      <div class="sec-top"></div>
+      <div class="container-fluid mx-0 about-us-bg">
+        <div class="container my-4" style="min-height: 50vh">
+          <div class="row justify-content-center">
+            <h1 class="text-center black1">Who we are?</h1>
+            <div class="sec-header my-2"></div>
+          </div>
+          <div class="row my-5">
+            <div class="col-md-4 p-4 py-1 py-md-4">
+              <img
+                class="img-fluid"
+                src="./asset/img/aboutus.svg"
+                alt="Learnbasics about us"
+              />
+            </div>
+            <div class="col-md-8 p-4 py-1 py-md-4 align-self-center">
+              <p class="mt-3 mt-md-0">
+                Our team helps students at every level to learn Math and Science
+                concepts easily by teaching everything from absolute basics to
+                make them understand the concepts better and identify where the
+                students are lagging at, will help schools and parents to
+                identify individual students learning gap.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--========== Who we are? - Section 2 ==========-->
-
-  <section id="about-us">
-    <div class="sec-top"></div>
-    <div class="container-fluid mx-0 about-us-bg">
-      <div class="container my-4" style="min-height: 50vh">
+    <!--==========What we offer? - Section 3==========-->
+    <section>
+      <div class="container my-5">
         <div class="row justify-content-center">
-          <h1 class="text-center black1">Who we are?</h1>
+          <h1 class="text-center black1">What we offer ?</h1>
           <div class="sec-header my-2"></div>
         </div>
-        <div class="row my-5">
-          <div class="col-md-4 p-4 py-1 py-md-4">
-            <img class="img-fluid" src="./asset/img/aboutus.svg" alt="Learnbasics about us" />
-          </div>
-          <div class="col-md-8 p-4 py-1 py-md-4 align-self-center">
-            <p class="mt-3 mt-md-0">
-              Our team helps students at every level to learn Math and Science
-              concepts easily by teaching everything from absolute basics to
-              make them understand the concepts better and identify where the
-              students are lagging at, will help schools and parents to
-              identify individual students learning gap.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==========What we offer? - Section 3==========-->
-  <section>
-    <div class="container my-5">
-      <div class="row justify-content-center">
-        <h1 class="text-center black1">What we offer ?</h1>
-        <div class="sec-header my-2"></div>
-      </div>
-      <div class="
+        <div
+          class="
             d-flex
             flex-row flex-wrap
             justify-content-around
             mx-0
             my-5
             text-center
-          ">
-        <div class="offer-card">
-          <span>
-            <img src="./asset/img/img1offer.svg" class="offer-img-block img-fluid" alt="Learnbasics offer" />
-          </span>
-          <h2 class="mt-4 mb-3">Learning / Testing</h2>
-          <p class="text-color2">
-            Have you ever thought of having a teacher, who teaches you all the
-            concepts from basics at your place and your convenient time. In
-            Learn Basics students can learn all the concepts from the best
-            minds of the country.
-          </p>
-        </div>
-        <div class="offer-card">
-          <span>
-            <img src="./asset/img/img2offer.svg" class="offer-img-block img-fluid" alt="Learnbasics offer" />
-          </span>
-          <h2 class="mt-4 mb-3">Gap Identification</h2>
-          <p class="text-color2">
-            Take tests which can let you know where the students are lagging
-            at, identifying the weak areas at concept, topic and chapter level
-            from individual students to school level. This will helps the
-            teacher to bridge the gap between studnets and concepts indudually
-            and will upload the teacher burden.
-          </p>
-        </div>
-        <div class="offer-card">
-          <span>
-            <img src="./asset/img/img3offer.svg" class="offer-img-block img-fluid" alt="Learnbasics offer" />
-          </span>
-          <h2 class="mt-4 mb-3">Communication</h2>
-          <p class="text-color2">
-            teachers will recieve their class students' performance report in
-            their email inbox / whatsapp once in a fortnight, for daily update
-            teachers and principals can use our Learn Basics - Insights app.
-          </p>
+          "
+        >
+          <div class="offer-card">
+            <span>
+              <img
+                src="./asset/img/img1offer.svg"
+                class="offer-img-block img-fluid"
+                alt="Learnbasics offer"
+              />
+            </span>
+            <h2 class="mt-4 mb-3">Learning / Testing</h2>
+            <p class="text-color2">
+              Have you ever thought of having a teacher, who teaches you all the
+              concepts from basics at your place and your convenient time. In
+              Learn Basics students can learn all the concepts from the best
+              minds of the country.
+            </p>
+          </div>
+          <div class="offer-card">
+            <span>
+              <img
+                src="./asset/img/img2offer.svg"
+                class="offer-img-block img-fluid"
+                alt="Learnbasics offer"
+              />
+            </span>
+            <h2 class="mt-4 mb-3">Gap Identification</h2>
+            <p class="text-color2">
+              Take tests which can let you know where the students are lagging
+              at, identifying the weak areas at concept, topic and chapter level
+              from individual students to school level. This will helps the
+              teacher to bridge the gap between studnets and concepts indudually
+              and will upload the teacher burden.
+            </p>
+          </div>
+          <div class="offer-card">
+            <span>
+              <img
+                src="./asset/img/img3offer.svg"
+                class="offer-img-block img-fluid"
+                alt="Learnbasics offer"
+              />
+            </span>
+            <h2 class="mt-4 mb-3">Communication</h2>
+            <p class="text-color2">
+              teachers will recieve their class students' performance report in
+              their email inbox / whatsapp once in a fortnight, for daily update
+              teachers and principals can use our Learn Basics - Insights app.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--========== Banner - Section 4==========-->
-  <section class="banner-sec">
-    <div class="container-fluid mt-lg-5">
-      <div class="container parallax">
-        <div class="banner d-flex align-items-center justify-content-around">
-          <div class="
+    <!--========== Banner - Section 4==========-->
+    <section class="banner-sec">
+      <div class="container-fluid mt-lg-5">
+        <div class="container parallax">
+          <div class="banner d-flex align-items-center justify-content-around">
+            <div
+              class="
                 col-12 col-lg-8
                 d-flex
                 justify-content-center
                 align-items-center
                 h-100
-              ">
-            <div class="col-12 col-md-10">
-              <h1 class="text-center text-white">
-                <sup><i class="fas fa-quote-left"></i></sup>
-                Every child is different and No child left behind
-                <sup><i class="fas fa-quote-right"></i></sup>
-              </h1>
+              "
+            >
+              <div class="col-12 col-md-10">
+                <h1 class="text-center text-white">
+                  <sup><i class="fas fa-quote-left"></i></sup>
+                  Every child is different and No child left behind
+                  <sup><i class="fas fa-quote-right"></i></sup>
+                </h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--========== Services - Section ==========-->
-  <section>
-    <!--==========For Students-Section ==========-->
-    <section class="mt-5" id="services">
-      <div class="sec-top"></div>
+    <!--========== Services - Section ==========-->
+    <section>
+      <!--==========For Students-Section ==========-->
+      <section class="mt-5" id="services">
+        <div class="sec-top"></div>
 
-      <div class="container mb-5 py-2">
-        <div class="row justify-content-center mb-5 mt-3">
-          <h1 class="text-center black1">Services</h1>
-          <div class="sec-header my-2"></div>
-        </div>
+        <div class="container mb-5 py-2">
+          <div class="row justify-content-center mb-5 mt-3">
+            <h1 class="text-center black1">Services</h1>
+            <div class="sec-header my-2"></div>
+          </div>
 
-        <div class="row me-0 justify-content-center justify-content-lg-between">
-          <div class="
+          <div
+            class="row me-0 justify-content-center justify-content-lg-between"
+          >
+            <div
+              class="
                 col-12 col-lg-5
                 me-0
                 p-4
@@ -289,15 +392,21 @@
                 d-flex
                 flex-column
                 bg-light
-              ">
-            <div>
-              <h1 class="fw-700">How Learn Basic is helpful for Students</h1>
-            </div>
+              "
+            >
+              <div>
+                <h1 class="fw-700">How Learn Basic is helpful for Students</h1>
+              </div>
 
-            <div class="col-lg-12">
-              <div class="nav nav-pills d-flex flex-row align-items-center" id="v-pills-tab" role="tablist"
-                aria-orientation="vertical">
-                <div class="
+              <div class="col-lg-12">
+                <div
+                  class="nav nav-pills d-flex flex-row align-items-center"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -308,21 +417,28 @@
                       align-items-center
                       w-100
                       active
-                    " id="v-pills-1-tab" data-bs-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1"
-                  aria-selected="true">
-                  <div class="my-2 flex-grow-1 me-2">
-                    <p class="fw-700">
-                      Learn everything from absolute basics
-                    </p>
-                    <p class="mb-0 fw-400">
-                      Test your preparation with series of tests at concept
-                      level, topic level and chapter level at any time and at
-                      your convenience.
-                    </p>
+                    "
+                    id="v-pills-1-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-1"
+                    role="tab"
+                    aria-controls="v-pills-1"
+                    aria-selected="true"
+                  >
+                    <div class="my-2 flex-grow-1 me-2">
+                      <p class="fw-700">
+                        Learn everything from absolute basics
+                      </p>
+                      <p class="mb-0 fw-400">
+                        Test your preparation with series of tests at concept
+                        level, topic level and chapter level at any time and at
+                        your convenience.
+                      </p>
+                    </div>
+                    <i class="fas fa-chevron-right d-none d-lg-block"></i>
                   </div>
-                  <i class="fas fa-chevron-right d-none d-lg-block"></i>
-                </div>
-                <div class="
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -332,18 +448,25 @@
                       shadow-sm
                       align-items-center
                       w-100
-                    " id="v-pills-2-tab" data-bs-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2"
-                  aria-selected="true">
-                  <div class="my-2 flex-grow-1 me-2">
-                    <p class="fw-bold">Learn everything at your finger tip</p>
-                    <p class="mb-0">
-                      Videos, mindmaps, flow chart, experiments, real life
-                      examples and much more.
-                    </p>
+                    "
+                    id="v-pills-2-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-2"
+                    role="tab"
+                    aria-controls="v-pills-2"
+                    aria-selected="true"
+                  >
+                    <div class="my-2 flex-grow-1 me-2">
+                      <p class="fw-bold">Learn everything at your finger tip</p>
+                      <p class="mb-0">
+                        Videos, mindmaps, flow chart, experiments, real life
+                        examples and much more.
+                      </p>
+                    </div>
+                    <i class="fas fa-chevron-right d-none d-lg-block"></i>
                   </div>
-                  <i class="fas fa-chevron-right d-none d-lg-block"></i>
-                </div>
-                <div class="
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -353,43 +476,80 @@
                       shadow-sm
                       w-100
                       align-items-center
-                    " id="v-pills-3-tab" data-bs-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3"
-                  aria-selected="true">
-                  <div class="my-2 flex-grow-1 me-2">
-                    <p class="fw-bold">
-                      We are helping them to overcome defiance.
-                    </p>
-                    <p class="mb-0"></p>
+                    "
+                    id="v-pills-3-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-3"
+                    role="tab"
+                    aria-controls="v-pills-3"
+                    aria-selected="true"
+                  >
+                    <div class="my-2 flex-grow-1 me-2">
+                      <p class="fw-bold">
+                        We are helping them to overcome defiance.
+                      </p>
+                      <p class="mb-0"></p>
+                    </div>
+                    <i class="fas fa-chevron-right d-none d-lg-block"></i>
                   </div>
-                  <i class="fas fa-chevron-right d-none d-lg-block"></i>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 tab-content align-self-center" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-              <img src="./asset/img/services/student1.jpg" alt="Lap" class="img-fluid rounded"
-                alt="Learnbasics Learn everything from absolute basics" />
-            </div>
-            <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-              <img src="./asset/img/services/student22.jpg" alt="Lap" class="img-fluid rounded"
-                alt="learnbasics Learn everything at your finger tip" />
-            </div>
-            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-              <img src="./asset/img/services/student3.jpg" alt="Lap" class="img-fluid rounded"
-                alt="learnbasics We are helping them to overcome defiance" />
+            <div
+              class="col-lg-6 tab-content align-self-center"
+              id="v-pills-tabContent"
+            >
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-1"
+                role="tabpanel"
+                aria-labelledby="v-pills-1-tab"
+              >
+                <img
+                  src="./asset/img/services/student1.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt="Learnbasics Learn everything from absolute basics"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-2"
+                role="tabpanel"
+                aria-labelledby="v-pills-2-tab"
+              >
+                <img
+                  src="./asset/img/services/student22.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt="learnbasics Learn everything at your finger tip"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-3"
+                role="tabpanel"
+                aria-labelledby="v-pills-3-tab"
+              >
+                <img
+                  src="./asset/img/services/student3.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt="learnbasics We are helping them to overcome defiance"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--==========For Parents-Section ==========-->
-    <section class="">
-      <div class="container my-5 py-5">
-        <div class="row me-0 justify-content-between">
-          <div class="col-lg-1 order-lg-2"></div>
-          <div class="
+      <!--==========For Parents-Section ==========-->
+      <section class="">
+        <div class="container my-5 py-5">
+          <div class="row me-0 justify-content-between">
+            <div class="col-lg-1 order-lg-2"></div>
+            <div
+              class="
                 col-12 col-lg-5
                 order-lg-3
                 d-flex
@@ -397,15 +557,21 @@
                 flex-column
                 bg-light
                 rounded
-              ">
-            <div>
-              <h1 class="fw-bold">How Learn Basic is helpful for Parents</h1>
-            </div>
+              "
+            >
+              <div>
+                <h1 class="fw-bold">How Learn Basic is helpful for Parents</h1>
+              </div>
 
-            <div class="col-lg-12 mt-2">
-              <div class="nav nav-pills d-flex flex-row align-items-center" id="v-pills-tab" role="tablist"
-                aria-orientation="vertical">
-                <div class="
+              <div class="col-lg-12 mt-2">
+                <div
+                  class="nav nav-pills d-flex flex-row align-items-center"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -416,19 +582,26 @@
                       align-items-center
                       w-100
                       active
-                    " id="v-pills-1-tab" data-bs-toggle="pill" href="#v-pills-p1" role="tab" aria-controls="v-pills-p1"
-                  aria-selected="true">
-                  <i class="fas fa-chevron-left d-none d-lg-block"></i>
-                  <div class="my-2 offset-lg-1">
-                    <p class="fw-bold">
-                      Chance to sit with your kid and learn together
-                    </p>
-                    <p class="mb-0">
-                      Opportunity to sit with the child and learn with them.
-                    </p>
+                    "
+                    id="v-pills-1-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-p1"
+                    role="tab"
+                    aria-controls="v-pills-p1"
+                    aria-selected="true"
+                  >
+                    <i class="fas fa-chevron-left d-none d-lg-block"></i>
+                    <div class="my-2 offset-lg-1">
+                      <p class="fw-bold">
+                        Chance to sit with your kid and learn together
+                      </p>
+                      <p class="mb-0">
+                        Opportunity to sit with the child and learn with them.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -438,21 +611,28 @@
                       shadow-sm
                       w-100
                       align-items-center
-                    " id="v-pills-2-tab" data-bs-toggle="pill" href="#v-pills-p2" role="tab" aria-controls="v-pills-p2"
-                  aria-selected="true">
-                  <i class="fas fa-chevron-left d-none d-lg-block"></i>
-                  <div class="my-2 offset-lg-1">
-                    <p class="fw-bold">
-                      Helps you to identify where your kid is weak at
-                    </p>
-                    <p class="mb-0">
-                      Know your child's performance on class and in Learn
-                      Basics course with a precise and best in class
-                      analytics.
-                    </p>
+                    "
+                    id="v-pills-2-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-p2"
+                    role="tab"
+                    aria-controls="v-pills-p2"
+                    aria-selected="true"
+                  >
+                    <i class="fas fa-chevron-left d-none d-lg-block"></i>
+                    <div class="my-2 offset-lg-1">
+                      <p class="fw-bold">
+                        Helps you to identify where your kid is weak at
+                      </p>
+                      <p class="mb-0">
+                        Know your child's performance on class and in Learn
+                        Basics course with a precise and best in class
+                        analytics.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -462,53 +642,92 @@
                       shadow-sm
                       w-100
                       align-items-center
-                    " id="v-pills-3-tab" data-bs-toggle="pill" href="#v-pills-p3" role="tab" aria-controls="v-pills-p3"
-                  aria-selected="true">
-                  <i class="fas fa-chevron-left d-none d-lg-block"></i>
-                  <div class="my-2 offset-lg-1">
-                    <p class="fw-bold">Identify the learning gap</p>
-                    <p class="mb-0">
-                      Get regular updates on child's progess with one click
-                      away.
-                    </p>
+                    "
+                    id="v-pills-3-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-p3"
+                    role="tab"
+                    aria-controls="v-pills-p3"
+                    aria-selected="true"
+                  >
+                    <i class="fas fa-chevron-left d-none d-lg-block"></i>
+                    <div class="my-2 offset-lg-1">
+                      <p class="fw-bold">Identify the learning gap</p>
+                      <p class="mb-0">
+                        Get regular updates on child's progess with one click
+                        away.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 order-lg-1 tab-content align-self-center" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-p1" role="tabpanel" aria-labelledby="v-pills-p1-tab">
-              <img src="./asset/img/services/Parents1.jpg" alt="Lap" class="img-fluid rounded"
-                alt="learnbasics Chance to sit with your kid and learn together" />
-            </div>
-            <div class="tab-pane fade" id="v-pills-p2" role="tabpanel" aria-labelledby="v-pills-p2-tab">
-              <img src="./asset/img/services/Parents2.jpg" alt="Lap" class="img-fluid rounded"
-                alt="learnbasics Helps you to identify where your kid is weak at" />
-            </div>
-            <div class="tab-pane fade" id="v-pills-p3" role="tabpanel" aria-labelledby="v-pills-p3-tab">
-              <img src="./asset/img/services/parents3.jpg" alt="Lap" class="img-fluid rounded"
-                alt="learnbasics Identify the learning gap" />
+            <div
+              class="col-lg-6 order-lg-1 tab-content align-self-center"
+              id="v-pills-tabContent"
+            >
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-p1"
+                role="tabpanel"
+                aria-labelledby="v-pills-p1-tab"
+              >
+                <img
+                  src="./asset/img/services/Parents1.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt="learnbasics Chance to sit with your kid and learn together"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-p2"
+                role="tabpanel"
+                aria-labelledby="v-pills-p2-tab"
+              >
+                <img
+                  src="./asset/img/services/Parents2.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt="learnbasics Helps you to identify where your kid is weak at"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-p3"
+                role="tabpanel"
+                aria-labelledby="v-pills-p3-tab"
+              >
+                <img
+                  src="./asset/img/services/parents3.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt="learnbasics Identify the learning gap"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--==========For Teachers-Section ==========-->
-    <section class="">
-      <div class="container my-5 py-5">
-        <div class="row me-0 justify-content-between bg-light p-4 rounded">
-          <div class="col-12 col-lg-5 me-0 d-flex flex-column bg-light">
-            <div>
-              <h1 class="fw-bold">
-                How Learn Basic is helpful for Teachers
-              </h1>
-            </div>
+      <!--==========For Teachers-Section ==========-->
+      <section class="">
+        <div class="container my-5 py-5">
+          <div class="row me-0 justify-content-between bg-light p-4 rounded">
+            <div class="col-12 col-lg-5 me-0 d-flex flex-column bg-light">
+              <div>
+                <h1 class="fw-bold">How Learn Basic is helpful for Teachers</h1>
+              </div>
 
-            <div class="col-lg-12">
-              <div class="nav nav-pills d-flex flex-row align-items-center" id="v-pills-tab" role="tablist"
-                aria-orientation="vertical">
-                <div class="
+              <div class="col-lg-12">
+                <div
+                  class="nav nav-pills d-flex flex-row align-items-center"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -519,21 +738,28 @@
                       align-items-center
                       w-100
                       active
-                    " id="v-pills-1-tab" data-bs-toggle="pill" href="#v-pills-t1" role="tab" aria-controls="v-pills-t1"
-                  aria-selected="true">
-                  <div class="my-2 flex-grow-1 me-2">
-                    <p class="fw-bold">
-                      To understand the students, evaluate and accept
-                      responsibilities
-                    </p>
-                    <p class="mb-0">
-                      We help teachers to spend more time with students by
-                      taking the burden of testing, evaluation and analysis.
-                    </p>
+                    "
+                    id="v-pills-1-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-t1"
+                    role="tab"
+                    aria-controls="v-pills-t1"
+                    aria-selected="true"
+                  >
+                    <div class="my-2 flex-grow-1 me-2">
+                      <p class="fw-bold">
+                        To understand the students, evaluate and accept
+                        responsibilities
+                      </p>
+                      <p class="mb-0">
+                        We help teachers to spend more time with students by
+                        taking the burden of testing, evaluation and analysis.
+                      </p>
+                    </div>
+                    <i class="fas fa-chevron-right d-none d-lg-block"></i>
                   </div>
-                  <i class="fas fa-chevron-right d-none d-lg-block"></i>
-                </div>
-                <div class="
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -543,20 +769,27 @@
                       shadow-sm
                       align-items-center
                       w-100
-                    " id="v-pills-2-tab" data-bs-toggle="pill" href="#v-pills-t2" role="tab" aria-controls="v-pills-t2"
-                  aria-selected="true">
-                  <div class="my-2 flex-grow-1 me-2">
-                    <p class="fw-bold">
-                      To know the plus and minus of students
-                    </p>
-                    <p class="mb-0">
-                      Class level analytics helps improve overall teaching
-                      experience.
-                    </p>
+                    "
+                    id="v-pills-2-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-t2"
+                    role="tab"
+                    aria-controls="v-pills-t2"
+                    aria-selected="true"
+                  >
+                    <div class="my-2 flex-grow-1 me-2">
+                      <p class="fw-bold">
+                        To know the plus and minus of students
+                      </p>
+                      <p class="mb-0">
+                        Class level analytics helps improve overall teaching
+                        experience.
+                      </p>
+                    </div>
+                    <i class="fas fa-chevron-right d-none d-lg-block"></i>
                   </div>
-                  <i class="fas fa-chevron-right d-none d-lg-block"></i>
-                </div>
-                <div class="
+                  <div
+                    class="
                       d-flex
                       py-2
                       px-4
@@ -566,61 +799,102 @@
                       shadow-sm
                       w-100
                       align-items-center
-                    " id="v-pills-3-tab" data-bs-toggle="pill" href="#v-pills-t3" role="tab" aria-controls="v-pills-t3"
-                  aria-selected="true">
-                  <div class="my-2 flex-grow-1 me-2">
-                    <p class="fw-bold">To establish individual care</p>
-                    <p class="mb-0">
-                      Our analytics will help teachers to give personalised
-                      attention to students.
-                    </p>
+                    "
+                    id="v-pills-3-tab"
+                    data-bs-toggle="pill"
+                    href="#v-pills-t3"
+                    role="tab"
+                    aria-controls="v-pills-t3"
+                    aria-selected="true"
+                  >
+                    <div class="my-2 flex-grow-1 me-2">
+                      <p class="fw-bold">To establish individual care</p>
+                      <p class="mb-0">
+                        Our analytics will help teachers to give personalised
+                        attention to students.
+                      </p>
+                    </div>
+                    <i class="fas fa-chevron-right d-none d-lg-block"></i>
                   </div>
-                  <i class="fas fa-chevron-right d-none d-lg-block"></i>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 tab-content align-self-center" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-t1" role="tabpanel" aria-labelledby="v-pills-t1-tab">
-              <img src="./asset/img/services/teacher1.jpg" alt="Lap" class="img-fluid rounded" alt=" learnbasics To understand the students, evaluate and accept
-                        responsibilities" />
-            </div>
-            <div class="tab-pane fade" id="v-pills-t2" role="tabpanel" aria-labelledby="v-pills-t2-tab">
-              <img src="./asset/img/services/teacher2.jpg" alt="Lap" class="img-fluid rounded"
-                alt=" learnbasics To know the plus and minus of students" />
-            </div>
-            <div class="tab-pane fade" id="v-pills-t3" role="tabpanel" aria-labelledby="v-pills-t3-tab">
-              <img src="./asset/img/services/teacher3.jpg" alt="Lap" class="img-fluid rounded"
-                alt=" learnbasics To establish individual care" />
+            <div
+              class="col-lg-6 tab-content align-self-center"
+              id="v-pills-tabContent"
+            >
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-t1"
+                role="tabpanel"
+                aria-labelledby="v-pills-t1-tab"
+              >
+                <img
+                  src="./asset/img/services/teacher1.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt=" learnbasics To understand the students, evaluate and accept
+                        responsibilities"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-t2"
+                role="tabpanel"
+                aria-labelledby="v-pills-t2-tab"
+              >
+                <img
+                  src="./asset/img/services/teacher2.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt=" learnbasics To know the plus and minus of students"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-t3"
+                role="tabpanel"
+                aria-labelledby="v-pills-t3-tab"
+              >
+                <img
+                  src="./asset/img/services/teacher3.jpg"
+                  alt="Lap"
+                  class="img-fluid rounded"
+                  alt=" learnbasics To establish individual care"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
-  </section>
 
-  <!--========== Team - Section ==========-->
-  <section style="background-color: #ffffff" id="team">
-    <div class="sec-top"></div>
-    <div class="container-fluid mx-0 mt-3">
-      <div class="row justify-content-center mt-4">
-        <h1 class="text-center black1">Team</h1>
-        <div class="sec-header my-2"></div>
-        <h2 class="text-center lead mt-3 text-color2">
-          The strength of the team is each individual member.<br />
-          The strength of each member is the team
-        </h2>
-      </div>
-      <div class="container my-5">
-        <div class="
+    <!--========== Team - Section ==========-->
+    <section style="background-color: #ffffff" id="team">
+      <div class="sec-top"></div>
+      <div class="container-fluid mx-0 mt-3">
+        <div class="row justify-content-center mt-4">
+          <h1 class="text-center black1">Team</h1>
+          <div class="sec-header my-2"></div>
+          <h2 class="text-center lead mt-3 text-color2">
+            The strength of the team is each individual member.<br />
+            The strength of each member is the team
+          </h2>
+        </div>
+        <div class="container my-5">
+          <div
+            class="
               d-flex
               flex-row
               align-items-center
               justify-content-center
               slider
-            " style="height: 60vh">
-          <div class="slider-item">
-            <div class="
+            "
+            style="height: 60vh"
+          >
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -628,17 +902,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Saran R - NIT Trichy</p>
-              <p>Teacher, Head of Content<br>Founding Team</p>
-              
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Saran R - NIT Trichy</p>
+                <p>Teacher, Head of Content<br />Founding Team</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -646,17 +925,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Adithya S - NIT Trichy</p>
-              <p>Teacher<br>Founding Team</p>
-             
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Adithya S - NIT Trichy</p>
+                <p>Teacher<br />Founding Team</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -664,17 +948,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Aadithyan K - IISc</p>
-              <p>Banglore, Content Architect<br>Founding Team</p>
-              
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Aadithyan K - IISc</p>
+                <p>Banglore, Content Architect<br />Founding Team</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -682,17 +971,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Kannan</p>
-              <p>Head of Media<br>Founding Team</p>
-             
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Kannan</p>
+                <p>Head of Media<br />Founding Team</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -700,17 +994,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Pradeep Bosh - MBA (TSM)</p>
-              <p>Head of Operations<br>Founding Team</p>
-              
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Pradeep Bosh - MBA (TSM)</p>
+                <p>Head of Operations<br />Founding Team</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -718,17 +1017,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Eswar G - NIT Trichy</p>
-              <p>Content Architect<br>Founding Team</p>
-             
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Eswar G - NIT Trichy</p>
+                <p>Content Architect<br />Founding Team</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -736,18 +1040,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">
-                Janani - MBA (TSM)
-              </p>
-              <p>Product Head</p>
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Janani - MBA (TSM)</p>
+                <p>Product Head</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -755,17 +1063,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Karthe R</p>
-              <p>Business Head<br>Founding Team</p>
-              
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Karthe R</p>
+                <p>Business Head<br />Founding Team</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -773,16 +1086,22 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Valarmathi</p>
-              <p>Content Creator</p>
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Valarmathi</p>
+                <p>Content Creator</p>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="
+            <div class="slider-item">
+              <div
+                class="
                   d-flex
                   flex-column
                   justify-content-center
@@ -790,242 +1109,291 @@
                   p-2
                   team-img-card
                   text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Kavipriya</p>
-              <p>Content Creator</p>
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Kavipriya</p>
+                <p>Content Creator</p>
+              </div>
             </div>
-          </div>
-          
-          <div class="slider-item">
-            <div class="
-                  d-flex
-                  flex-column
-                  justify-content-center
-                  align-items-center
-                  p-2
-                  team-img-card
-                  text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Kripa Johnson</p>
-              <p>Content Creator</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="
-                  d-flex
-                  flex-column
-                  justify-content-center
-                  align-items-center
-                  p-2
-                  team-img-card
-                  text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Monisha</p>
-              <p>Content Creator</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="
-                  d-flex
-                  flex-column
-                  justify-content-center
-                  align-items-center
-                  p-2
-                  team-img-card
-                  text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Lubaba</p>
-              <p>Content Creator</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="
-                  d-flex
-                  flex-column
-                  justify-content-center
-                  align-items-center
-                  p-2
-                  team-img-card
-                  text-center
-                ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Pavan S</p>
-              <p>Software Developer</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center
-                p-2
-                team-img-card
-                text-center
-              ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Manjunath G</p>
-              <p>Software Developer</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div
-              class="
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center
-                p-2
-                team-img-card
-                text-center
-              "
-            >
-              <span class="">
-                <img
-                  src="./asset/img/profilelb.png"
-                  class="team-img-block rounded-circle"
-                  alt="Learnbasics Team "
-                />
-              </span>
-              <p class="mt-4 mb-0">Saurathi</p>
-              <p>Teacher</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center
-                p-2
-                team-img-card
-                text-center
-              ">
-              <span class="">
-                <img src="./asset/img/profilelb.png" class="team-img-block rounded-circle" alt="Learnbasics Team " />
-              </span>
-              <p class="mt-4 mb-0">Raghunath - IIT Madras</p>
-              <p>Teacher<br>Founding Team</p>
-             
-            </div>
-          </div>
-          
-          <div class="slider-item">
-            <div
-              class="
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center
-                p-2
-                team-img-card
-                text-center
-              "
-            >
-              <span class="">
-                <img
-                  src="./asset/img/profilelb.png"
-                  class="team-img-block rounded-circle"
-                  alt="Learnbasics Team "
-                />
-              </span>
-              <p class="mt-4 mb-0">Praneeth - NIT Trichy</p>
-              <p>Content Architect<br>Founding Team</p>
-              
-            </div>
-          </div>
-          <div class="slider-item">
-            <div
-              class="
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center
-                p-2
-                team-img-card
-                text-center
-              "
-            >
-              <span class="">
-                <img
-                  src="./asset/img/profilelb.png"
-                  class="team-img-block rounded-circle"
-                  alt="Learnbasics Team "
-                />
-              </span>
-              <p class="mt-4 mb-0">Koushik - NIT Trichy</p>
-              <p>Analyst<br>Founding Team</p>
-             
-            </div>
-          </div>
-          <div class="slider-item">
-            <div
-              class="
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center
-                p-2
-                team-img-card
-                text-center
-              "
-            >
-              <span class="">
-                <img
-                  src="./asset/img/profilelb.png"
-                  class="team-img-block rounded-circle"
-                  alt="Learnbasics Team "
-                />
-              </span>
-              <p class="mt-4 mb-0">Rohith K - IIT Bombay</p>
-              <p>Head of Strategy<br>Founding Team</p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!--==========contact us==========-->
-  <section id="contact" class="">
-    <div class="sec-top"></div>
-    <div class="container mb-4">
-      <div class="row justify-content-center mb-5 mt-4 mt-lg-auto">
-        <h1 class="text-center black1">Contact Us</h1>
-        <div class="sec-header my-2"></div>
-      </div>
-      <div class="d-flex flex-wrap">
-        <div class="col-md-5 mt-4 ps-3 d-flex flex-column">
-          <div class="d-flex">
-            <img src="./asset/img/LB-logo.svg" alt="learnbasics Logo" class="d-none d-lg-block" width="65"
-              height="65" />
-            <img src="./asset/img/LB-logo.svg" alt="learnbasics Logo" class="d-lg-none" width="50" height="50" />
-            <div class="d-flex flex-column">
-              <h1 class="fw-700 black1 mb-0 ps-2">LearnBasics</h1>
-              <p class="me-0 ps-2 text-color2">
-                An NIT, IISc and IIT alumini venture.
-              </p>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Kripa Johnson</p>
+                <p>Content Creator</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Monisha</p>
+                <p>Content Creator</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Lubaba</p>
+                <p>Content Creator</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Pavan S</p>
+                <p>Software Developer</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Manjunath G</p>
+                <p>Software Developer</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Saurathi</p>
+                <p>Teacher</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Raghunath - IIT Madras</p>
+                <p>Teacher<br />Founding Team</p>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Praneeth - NIT Trichy</p>
+                <p>Content Architect<br />Founding Team</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Koushik - NIT Trichy</p>
+                <p>Analyst<br />Founding Team</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  p-2
+                  team-img-card
+                  text-center
+                "
+              >
+                <span class="">
+                  <img
+                    src="./asset/img/profilelb.png"
+                    class="team-img-block rounded-circle"
+                    alt="Learnbasics Team "
+                  />
+                </span>
+                <p class="mt-4 mb-0">Rohith K - IIT Bombay</p>
+                <p>Head of Strategy<br />Founding Team</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="
+      </div>
+    </section>
+
+    <!--==========contact us==========-->
+    <section id="contact" class="">
+      <div class="sec-top"></div>
+      <div class="container mb-4">
+        <div class="row justify-content-center mb-5 mt-4 mt-lg-auto">
+          <h1 class="text-center black1">Contact Us</h1>
+          <div class="sec-header my-2"></div>
+        </div>
+        <div class="d-flex flex-wrap">
+          <div class="col-md-5 mt-4 ps-3 d-flex flex-column">
+            <div class="d-flex">
+              <img
+                src="./asset/img/LB-logo.svg"
+                alt="learnbasics Logo"
+                class="d-none d-lg-block"
+                width="65"
+                height="65"
+              />
+              <img
+                src="./asset/img/LB-logo.svg"
+                alt="learnbasics Logo"
+                class="d-lg-none"
+                width="50"
+                height="50"
+              />
+              <div class="d-flex flex-column">
+                <h1 class="fw-700 black1 mb-0 ps-2">LearnBasics</h1>
+                <p class="me-0 ps-2 text-color2">
+                  An NIT, IISc and IIT alumini venture.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
               col-12 col-md-5 col-lg-4
               mt-4
               ps-3 ps-md-0
@@ -1033,87 +1401,112 @@
               flex-column
               justify-content-start
               align-content-center
-            ">
-          <li class="list-inline-item mb-4">
-            <div class="d-flex align-items-center">
-              <i class="fas fa-map-marker-alt fa-2x me-2"></i>
+            "
+          >
+            <li class="list-inline-item mb-4">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt fa-2x me-2"></i>
 
-              <p class="text-secondary mb-0 offset-1">
-                3.3.29 S5, MGR Nagar, Sankari, Salem,<br />
-                Tamil Nadu - 637301, India
-              </p>
-            </div>
-          </li>
-          <li class="list-inline-item me-4 mb-4">
-            <div class="d-flex align-items-center">
-              <i class="fas fa-envelope fa-2x"></i>
-              <a class="text-decoration-none text-secondary offset-1"
-                href="mailto:hi@learnbasics.fun">hi@learnbasics.fun
-              </a>
-            </div>
-          </li>
-          <li class="list-inline-item me-4 mb-4">
-            <div class="d-flex align-items-center">
-              <i class="fas fa-headset fa-2x"></i>
-              <a class="text-decoration-none text-secondary offset-1" href="tel:+91-9488090404">+91-9488090404</a>
-            </div>
-          </li>
-        </div>
-        <div class="col-12 col-md-2 mt-4">
-          <nav class="
+                <p class="text-secondary mb-0 offset-1">
+                  3.3.29 S5, MGR Nagar, Sankari, Salem,<br />
+                  Tamil Nadu - 637301, India
+                </p>
+              </div>
+            </li>
+            <li class="list-inline-item me-4 mb-4">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope fa-2x"></i>
+                <a
+                  class="text-decoration-none text-secondary offset-1"
+                  href="mailto:hi@learnbasics.fun"
+                  >hi@learnbasics.fun
+                </a>
+              </div>
+            </li>
+            <li class="list-inline-item me-4 mb-4">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-headset fa-2x"></i>
+                <a
+                  class="text-decoration-none text-secondary offset-1"
+                  href="tel:+91-9488090404"
+                  >+91-9488090404</a
+                >
+              </div>
+            </li>
+          </div>
+          <div class="col-12 col-md-2 mt-4">
+            <nav
+              class="
                 d-flex
                 flex-column
                 justify-content-center justify-content-lg-end
                 pt-2 pt-lg-0
                 text-center
-              ">
-            <a href="#" class="scrollto pb-2 text-secondary text-decoration-none">Home</a>
-            <a href="#about-us" class="scrollto py-2 text-secondary text-decoration-none">About</a>
-            <a href="./privacy.html" class="scrollto py-2 text-secondary text-decoration-none">Privacy Policy</a>
-            <a href="./terms.html" class="scrollto py-2 text-secondary text-decoration-none">Terms of Use</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container-fluid py-4 shadow">
-      <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="copyright">
-            Copyright &copy; 2021 <strong>LearnBasics</strong>.
+              "
+            >
+              <a
+                href="#"
+                class="scrollto pb-2 text-secondary text-decoration-none"
+                >Home</a
+              >
+              <a
+                href="#about-us"
+                class="scrollto py-2 text-secondary text-decoration-none"
+                >About</a
+              >
+              <a
+                href="./privacy.html"
+                class="scrollto py-2 text-secondary text-decoration-none"
+                >Privacy Policy</a
+              >
+              <a
+                href="./terms.html"
+                class="scrollto py-2 text-secondary text-decoration-none"
+                >Terms of Use</a
+              >
+            </nav>
           </div>
-
-          <div>All Rights Reserved.</div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!--==========contact us with form ==========-->
-  <section id="contact" class="d-none">
-    <div class="sec-top"></div>
-    <div class="container mb-4">
-      <div class="row justify-content-center mb-5 mt-4 mt-lg-auto">
-        <h1 class="text-center black1">Contact Us</h1>
-        <div class="sec-header my-2"></div>
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container-fluid py-4 shadow">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="copyright">
+              Copyright &copy; 2021 <strong>LearnBasics</strong>.
+            </div>
+
+            <div>All Rights Reserved.</div>
+          </div>
+        </div>
       </div>
-      <div class="d-flex flex-wrap">
-        <div class="col-lg-4 col-md-6 mt-4 d-flex flex-column pe-3">
-          <div class="h2">LearnBasics</div>
-          <p>
-            An NIT, IISc and IIT alumini startup venture. Our team helps
-            students at all every level to learn Math and Science concepts
-            easily by teaching everything from absolute basics to make them
-            understand the concepts better and identify where the students are
-            lagging at.
-          </p>
+    </footer>
 
-          <!-- ====== social media icons =======-->
+    <!--==========contact us with form ==========-->
+    <section id="contact" class="d-none">
+      <div class="sec-top"></div>
+      <div class="container mb-4">
+        <div class="row justify-content-center mb-5 mt-4 mt-lg-auto">
+          <h1 class="text-center black1">Contact Us</h1>
+          <div class="sec-header my-2"></div>
+        </div>
+        <div class="d-flex flex-wrap">
+          <div class="col-lg-4 col-md-6 mt-4 d-flex flex-column pe-3">
+            <div class="h2">LearnBasics</div>
+            <p>
+              An NIT, IISc and IIT alumini startup venture. Our team helps
+              students at all every level to learn Math and Science concepts
+              easily by teaching everything from absolute basics to make them
+              understand the concepts better and identify where the students are
+              lagging at.
+            </p>
 
-          <!-- <div class="d-flex justify-content-center justify-content-md-start">
+            <!-- ====== social media icons =======-->
+
+            <!-- <div class="d-flex justify-content-center justify-content-md-start">
               <li class="list-inline-item">
                 <a href="#" class="text-decoration-none text-secondary"
                   ><i class="fab fa-instagram" style="font-size: 20px"></i
@@ -1135,155 +1528,207 @@
                 ></a>
               </li>
             </div> -->
-        </div>
-        <div class="
+          </div>
+          <div
+            class="
               col-11 col-lg-3 col-md-5
               mt-4
               d-flex
               flex-column
               justify-content-start
               align-content-center
-            ">
-          <li class="list-inline-item me-4 align-items-center mb-4">
-            <div class="d-flex align-items-center">
-              <i class="fas fa-map-marker-alt fa-2x me-2"></i>
+            "
+          >
+            <li class="list-inline-item me-4 align-items-center mb-4">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt fa-2x me-2"></i>
 
-              <p class="text-secondary mb-0 offset-1">
-                3.3.29 S5, MGR Nagar, Sankari, Salem, Tamil Nadu - 637301,
-                India
-              </p>
-            </div>
-          </li>
-          <li class="list-inline-item me-4 align-items-center mb-4">
-            <div class="d-flex align-items-center">
-              <i class="fas fa-envelope fa-2x"></i>
-              <a class="text-decoration-none text-secondary offset-1"
-                href="mailto:hi@learnbasics.fun">hi@learnbasics.fun
-              </a>
-            </div>
-          </li>
-          <li class="list-inline-item align-items-center me-4 mb-4">
-            <div class="d-flex align-items-center">
-              <i class="fas fa-headset fa-2x"></i>
-              <a class="text-decoration-none text-secondary offset-1" href="tel:+91-9488090404">+91-9488090404</a>
-            </div>
-          </li>
-        </div>
-        <div class="col-12 col-lg-5 mt-4 d-flex flex-column">
-          <form action="#" method="post">
-            <div class="form-group mb-3">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group mb-3">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group mb-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group mb-3">
-              <textarea class="form-control" name="message" rows="5" data-rule="required"
-                data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validate"></div>
-            </div>
+                <p class="text-secondary mb-0 offset-1">
+                  3.3.29 S5, MGR Nagar, Sankari, Salem, Tamil Nadu - 637301,
+                  India
+                </p>
+              </div>
+            </li>
+            <li class="list-inline-item me-4 align-items-center mb-4">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope fa-2x"></i>
+                <a
+                  class="text-decoration-none text-secondary offset-1"
+                  href="mailto:hi@learnbasics.fun"
+                  >hi@learnbasics.fun
+                </a>
+              </div>
+            </li>
+            <li class="list-inline-item align-items-center me-4 mb-4">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-headset fa-2x"></i>
+                <a
+                  class="text-decoration-none text-secondary offset-1"
+                  href="tel:+91-9488090404"
+                  >+91-9488090404</a
+                >
+              </div>
+            </li>
+          </div>
+          <div class="col-12 col-lg-5 mt-4 d-flex flex-column">
+            <form action="#" method="post">
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars"
+                />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  data-rule="email"
+                  data-msg="Please enter a valid email"
+                />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  data-rule="minlen:4"
+                  data-msg="Please enter at least 8 chars of subject"
+                />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  data-rule="required"
+                  data-msg="Please write something for us"
+                  placeholder="Message"
+                ></textarea>
+                <div class="validate"></div>
+              </div>
 
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">
-                Send message
-              </button>
-            </div>
-          </form>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                  Send message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======= Footer ======= -->
-  <footer class="d-none">
-    <div class="container-fluid py-4 shadow">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-lg-6 text-lg-start text-center">
-            <div class="copyright">
-              &copy; Copyright <strong>LearnBasics</strong>. All Rights
-              Reserved
+    <!-- ======= Footer ======= -->
+    <footer class="d-none">
+      <div class="container-fluid py-4 shadow">
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-lg-6 text-lg-start text-center">
+              <div class="copyright">
+                &copy; Copyright <strong>LearnBasics</strong>. All Rights
+                Reserved
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <nav class="
+            <div class="col-lg-6">
+              <nav
+                class="
                   d-flex
                   justify-content-center justify-content-lg-end
                   pt-2 pt-lg-0
-                ">
-              <a href="#" class="
+                "
+              >
+                <a
+                  href="#"
+                  class="
                     scrollto
                     pe-1
                     px-md-3
                     text-secondary text-decoration-none
-                  ">Home</a>
-              <a href="#about-us" class="
+                  "
+                  >Home</a
+                >
+                <a
+                  href="#about-us"
+                  class="
                     scrollto
                     pe-1
                     px-md-3
                     text-secondary text-decoration-none
-                  ">About</a>
-              <a href="./privacy.html" class="
+                  "
+                  >About</a
+                >
+                <a
+                  href="./privacy.html"
+                  class="
                     scrollto
                     pe-1
                     px-md-3
                     text-secondary text-decoration-none
-                  ">Privacy Policy</a>
-              <a href="./terms.html" class="scrollto px-md-3 text-secondary text-decoration-none">Terms of Use</a>
-            </nav>
+                  "
+                  >Privacy Policy</a
+                >
+                <a
+                  href="./terms.html"
+                  class="scrollto px-md-3 text-secondary text-decoration-none"
+                  >Terms of Use</a
+                >
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-</body>
+    </footer>
+    <!-- End Footer -->
+  </body>
 
-<script src="./asset/js/script.js"></script>
+  <script src="./asset/js/script.js"></script>
 
-<!--======== Tiny slider script==========-->
+  <!--======== Tiny slider script==========-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<script>
-  var slider = tns({
-    container: ".slider",
-    items: 1,
-    gutter: 50,
-    autoplay: true,
-    mouseDrag: true,
-    loop: true,
-    rewind: false,
-    autoplayTimeout: 1000,
-    speed: 4000,
-    nav: false,
-    fixedWidth: 280,
-    controls: false,
-    edgePadding: 15,
-    autoplayButtonOutput: false,
-    autoWidth: false,
-    preventActionWhenRunning: true,
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script>
+    var slider = tns({
+      container: ".slider",
+      items: 1,
+      gutter: 50,
+      autoplay: true,
+      mouseDrag: true,
+      loop: true,
+      rewind: false,
+      autoplayTimeout: 1000,
+      speed: 4000,
+      nav: false,
+      fixedWidth: 280,
+      controls: false,
+      edgePadding: 15,
+      autoplayButtonOutput: false,
+      autoWidth: false,
+      preventActionWhenRunning: true,
 
-    responsive: {
-      640: {
-        items: 2,
+      responsive: {
+        640: {
+          items: 2,
+        },
+        700: {
+          items: 2,
+        },
+        900: {
+          items: 2,
+        },
       },
-      700: {
-        items: 2,
-      },
-      900: {
-        items: 2,
-      },
-    },
-  });
-</script>
-
+    });
+  </script>
 </html>
